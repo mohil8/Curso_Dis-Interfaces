@@ -1,0 +1,15 @@
+*{
+    box-sizing: border-box;
+}
+
+img{
+    border: 1px solid black;
+    float: left;
+    margin:10px;
+}
+p{
+
+    display: block;
+    
+
+}

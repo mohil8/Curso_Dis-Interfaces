@@ -1,0 +1,23 @@
+*{
+    box-sizing: border-box;
+}
+
+.div1{
+
+    background-color: pink;
+    padding: 50px;
+    float: right;
+}
+.div2{
+
+    background-color: cadetblue;
+    padding: 50px;
+    float:left
+}
+.div3{
+
+    background-color: lightgreen;
+    padding: 50px;
+    float: left;
+
+}

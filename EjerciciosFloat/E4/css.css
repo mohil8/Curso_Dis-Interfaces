@@ -1,0 +1,16 @@
+*{
+    box-sizing: border-box;
+}
+
+.div1{
+    padding: 50px;
+    background-color: pink;
+    float: right;
+}
+.div2{
+    background-color: aqua;
+    display: inline;
+}
+.texto{
+    background-color: orange;
+}

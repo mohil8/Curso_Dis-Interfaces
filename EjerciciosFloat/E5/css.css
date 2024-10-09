@@ -1,0 +1,26 @@
+*{
+    box-sizing: border-box;
+}
+
+div{
+
+    padding: 20px;
+    font-weight: bold;
+    width: 25%;
+    float: left;
+    text-align: center;
+}
+
+.div1{
+    background-color: aqua;
+}
+.div2{
+    background-color: rgb(88, 195, 88);
+}
+.div3{
+    background-color: rgb(176, 124, 225);
+}
+.div4{
+    background-color: bisque;
+}
+

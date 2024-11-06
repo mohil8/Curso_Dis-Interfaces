@@ -1,0 +1,13 @@
+* {
+    box-sizing: border-box;
+}
+img{
+    width: 20%;
+}
+.texto{
+    float: right;
+    width: 73%;
+    overflow: auto;
+    background-color: aqua;
+}
+

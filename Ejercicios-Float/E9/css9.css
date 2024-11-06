@@ -1,0 +1,25 @@
+*{
+    box-sizing: border-box;
+}
+
+nav{
+    background-color: black;
+}
+div{
+    color: beige;
+    padding: 20px;
+}
+div:hover{
+    background-color: red;
+}
+.enlaces{
+    float: left;
+}
+.salir{
+    float: right;
+}
+.clearfix::after{
+    content: '';
+    clear: both;
+    display: table;
+}

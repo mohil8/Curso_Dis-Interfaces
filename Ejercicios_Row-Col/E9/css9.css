@@ -1,0 +1,27 @@
+.row{
+    background-color: black;
+    overflow: auto;
+}
+
+.f-right{
+    float: right;
+}
+.f-left{
+    float: left;
+}
+
+a:hover{
+    background-color: red;
+}
+
+[class*="col-"] {
+    padding: 0px;
+}
+
+a{  
+    font-weight: bold;
+    color: aliceblue;
+    text-align: center;
+    padding: 10px 14px;  
+    text-decoration: none;
+}

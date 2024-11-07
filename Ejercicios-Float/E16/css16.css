@@ -1,0 +1,32 @@
+.todo::after{
+    content: '';
+    clear: both;
+    display: table;
+}
+.todo{
+    border-bottom: 1px solid grey;
+    padding-block: 20px;
+    width: 50%;
+    margin: 0 auto; 
+}
+
+.todo-title{
+    font-size: 25px;
+}
+
+.todo-info{
+    float: left;
+}
+.icon{
+    float: left;
+}
+.checkbox-right{
+    float: right;
+    margin-right: 30px;
+    margin-top: 30px;
+}
+.todolist{
+    border: 1px solid;
+    width: 60%;
+    margin: 0 auto;
+}

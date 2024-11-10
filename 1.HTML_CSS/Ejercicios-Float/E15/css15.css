@@ -1,0 +1,23 @@
+.logo{
+    float: left;
+}
+.navigation{
+    float: right;
+}
+
+.post::after{
+    content: '';
+    clear: both;
+    display: table;
+}
+
+.image{
+    float: left;
+    width: 30%;
+    height: 110px;
+}
+
+.post_excerpt{
+    float: right;
+    width: 65%;
+}

@@ -1,0 +1,26 @@
+*{
+    box-sizing: border-box;
+}
+
+.container{
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+[class*="col-"]{
+    padding: 0px;
+}
+
+.padding-0{
+    padding: 0;
+}
+
+.sidebar{
+    height: 200px;
+}
+.main-content{
+    height: 200px;
+}
+.sub-content{
+    height: 200px;
+}

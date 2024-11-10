@@ -1,0 +1,36 @@
+*{
+    box-sizing: border-box;
+}
+
+header{
+    background-color: gray;
+    padding: 5px;
+    color: aliceblue;
+}
+.clearfix::after{
+    
+    content: '';
+    clear: both;
+    display: table;
+}
+
+.cajas{
+    float: left;
+    width: 30%;
+}
+.cajas *{
+    background-color: aqua;
+    margin-top: 10px;
+    padding: 10px;
+
+    
+}
+.texto{
+    float: right;
+    width: 60%;
+}
+footer{
+    background-color: gray;
+    padding: 15px;
+    color: aliceblue;
+}

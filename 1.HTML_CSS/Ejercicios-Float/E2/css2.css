@@ -1,0 +1,26 @@
+* {
+    box-sizing: border-box;
+}
+
+.container > div{
+    padding: 70px;
+}
+.container::after{
+    
+    content:'';
+    clear: both;
+    display: table;
+}
+
+.div1{
+    float: right;
+    background-color: aqua;
+}
+.div2{
+    float: left;
+    background-color: lightcoral;
+}
+.div3{
+    float: left;
+    background-color: aquamarine;
+}

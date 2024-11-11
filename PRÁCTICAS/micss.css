@@ -3,11 +3,16 @@
     margin: 0;
     padding: 0;
 }
-
+[class*="col-"] {
+    margin: 0px;
+}
 body{
-    background-color:#f0f8ff ;
+    background-color:#cde3f6 ;
     margin: 0 auto;
     max-width: 1100px;
+}
+.contenido{
+    padding: 0px 15px;
 }
 header{
     background-color: #4a90e2;
@@ -29,7 +34,7 @@ a{
     padding-inline: 10px;
 }
 a:hover{
-    color: yellow;
+    color: #ffd700;
 }
 nav{
     float: right;
@@ -38,14 +43,34 @@ nav{
 
 /*body*/
 
+.row{
+    margin-block: 30px;
+}
 #bienvenida{
     color: #4a90e2;
-    padding: 30px 20px;
+    padding: 30px 0px;
+}
+.cabecera{
+    color: #4a90e2;
+    padding-bottom: 4px;
+    border-bottom: 1px solid #4a90e2;
+}
+.cabecera-peque{
+    border-bottom: 1px solid #4a90e2;
+    color: #4a90e2;
 }
 
-#caja1-utlAv{
+#ultAv{
     background-color: white;
-    border-radius: 20px;
+    border-radius: 5px;
+}
+#ultAv ul{
+    list-style-type: none;
+    margin-top: 10px;
+}
+
+img{
+    border-radius: 5px;
 }
 
 

@@ -4,9 +4,43 @@
     padding: 0;
 }
 
-.f-left{
-    float: left;
+nav img{
+    padding: 10px;
+    width: 180px;
 }
-.f-right{
+
+nav input{
     float: right;
+    margin: 13px 10px;
+    padding: 5px;
+    transition: background-color,1s;
 }
+
+nav input:hover{
+    background-color: black;
+    color: white;
+}
+
+/*Header*/
+
+header {
+    position: relative;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/*Main*/
+
+section{
+    padding: 10px;
+}
+article{
+    background-color: aquamarine;
+    padding: 10px 20px;
+    border-radius: 10px;
+    margin: 5px;
+}
+
+article h3{
+    padding: 8px 0;
+}
+

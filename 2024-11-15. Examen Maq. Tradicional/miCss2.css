@@ -1,0 +1,98 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --color-blanco: white; /* Custom property para el color blanco */
+}
+
+/*container*/
+.container{
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+/*Header*/
+header::after {
+    content: '';
+    clear: both;
+    display: table;
+}
+
+header {
+    background-color: black;
+    position: sticky;
+    top: 0px;
+    z-index: 1;
+}
+
+header > h3 {
+    color: var(--color-blanco); 
+    padding: 10px;
+}
+
+header img {
+    width: 40px;
+    padding: 10px;
+}
+
+header a {
+    margin: 10px;
+    padding: 5px;
+    background-color: black;
+    color: var(--color-blanco); 
+    border: 1px solid var(--color-blanco);
+    border-radius: 4px;
+    text-decoration: none;
+}
+
+header a:hover {
+    background-color: var(--color-blanco);
+    color: black;
+}
+
+
+
+/*Main*/
+main {
+    padding: 20px;
+    background-color: #eee;
+}
+
+main > h1 {
+    background-color: var(--color-blanco); 
+    text-align: center;
+    padding: 10px;
+}
+
+article {
+    margin: 10px;
+    position: relative;
+}
+
+article img {
+    width: 100%;
+    border-radius: 5px;
+    box-shadow: 0 0 10px 3px grey;
+}
+
+article span {
+    background-color: var(--color-blanco); /* Usamos la custom property */
+    text-align: center;
+    padding: 2%;
+    font-weight: bold;
+    position: absolute;
+    bottom:-10px;
+    left: 34%;
+    box-shadow: 0 0 10px 3px grey;
+}
+/*Flotantes*/
+.f-right {
+    float: right;
+}
+
+.f-left {
+    float: left;
+}

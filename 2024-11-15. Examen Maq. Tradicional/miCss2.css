@@ -5,7 +5,7 @@
 }
 
 :root {
-    --color-blanco: white; /* Custom property para el color blanco */
+    --color-blanco: white; 
 }
 
 /*container*/
@@ -79,7 +79,7 @@ article img {
 }
 
 article span {
-    background-color: var(--color-blanco); /* Usamos la custom property */
+    background-color: var(--color-blanco);
     text-align: center;
     padding: 2%;
     font-weight: bold;

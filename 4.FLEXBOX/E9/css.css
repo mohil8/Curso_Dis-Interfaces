@@ -1,0 +1,25 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.flex{
+    display: flex;
+    background-color: black;
+    justify-content: end;
+}
+
+.flex a{
+    padding: 10px;
+    text-decoration: none;
+    color: white;
+}
+
+.salir{
+    margin-left: auto;
+}
+
+.flex a:hover{
+    background-color: red;
+}

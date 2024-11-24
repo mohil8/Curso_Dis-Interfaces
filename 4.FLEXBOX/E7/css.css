@@ -1,0 +1,36 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+header,footer{
+    background-color: grey;
+    color: white;
+    padding: 20px;
+}
+
+.flex{
+    display: flex;
+}
+
+.cajas{
+    flex: 30%;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+.cajas div{
+    padding: 10px;
+    background-color: lightseagreen;
+    margin-bottom: 5px;
+}
+
+.texto{
+    flex: 70%;
+    margin-top: 10px;
+}
+
+.texto p,h1{
+    padding: 10px;
+}

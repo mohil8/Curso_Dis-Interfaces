@@ -6,7 +6,16 @@
 .header{
     display: flex;
     justify-content: space-between;
-    flex-direction: row-reverse;
+    column-gap: 20px;
+    
+}
+
+.logo{
+    flex-basis: 25%;
+}
+
+.navigation{
+    flex-basis: 75%;
 }
 
 .main-content{
@@ -27,11 +36,7 @@
     
 }
 
-.sub-content{
-    height: 110px;
+.sub-content{   
     margin-bottom: 20px;
 }
 
-.sub-content-2{
-    height: 110px;
-}

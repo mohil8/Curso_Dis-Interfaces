@@ -1,0 +1,22 @@
+.container{
+    padding: 0px;
+    
+}
+
+.todo{
+    border-bottom: 1px solid grey;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+}
+
+.icon{
+    padding: 0;
+}f
+
+.derecha{
+    display: flex;
+    column-gap: 20px;
+}
+

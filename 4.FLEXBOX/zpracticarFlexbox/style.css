@@ -1,0 +1,123 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+#container-ppal{
+    border: 5px solid black;
+    display: flex;
+    min-height: 200px;
+}
+
+#container-ppal > div{
+    margin: 5px;
+}
+
+#container-izq{
+    border: 3px solid red;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+#container-izq >div{
+    margin: 3px;
+}
+#container-izq > div:first-of-type{
+    background-color: red;
+    align-self: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+}
+
+#container-izq > div:nth-of-type(2){
+    display: flex;
+    justify-content: center;
+
+}
+
+#container-izq > div:nth-of-type(2) *{
+    border: 1px solid;
+    width: 30px;
+    height: 30px;
+}
+#container-izq-5 >div{
+    border: 1px solid;
+    margin: 5px;
+    width: 30px;
+    height: 30px;
+}
+#container-izq-5{
+    border: 2px solid;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+
+
+
+#container-centro{
+    border: 3px solid green;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    justify-content: space-around;
+    
+}
+#container-centro-1{
+    display: flex;
+    justify-content: space-around;
+    height: 50px;
+    margin-top: 10px;
+}
+#container-centro-1 > div{
+    border: 1px solid;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+#container-centro-1 > div:nth-of-type(3){
+    height: auto;
+}
+#container-centro-1 > div:nth-of-type(2){
+    align-self: end;
+}
+
+#container-centro-1 > div:nth-of-type(4){
+    align-self: center;
+}
+
+#container-centro-2{
+    border: 1px solid;
+    margin-inline: 10px;
+    height: 50px;
+    
+}
+
+#container-centro-3{
+    display: flex;
+    margin-inline: 10px;
+    border: 1px solid;
+}
+
+#container-centro-3>div{
+    border: 1px solid;
+    width: 30px;
+    height: 30px;
+}
+
+#container-centro-3>div:nth-of-type(2){
+    flex-grow: 1;
+}
+
+#container-dcha{
+    border: 3px solid blue;
+    flex-grow: 1;
+}

@@ -1,0 +1,19 @@
+.header{
+    display: flex;
+    justify-content: space-between;
+}
+
+.article{
+    display: flex;
+    column-gap: 20px;
+}
+
+.image{
+    flex-basis: 30%;
+    height: 120px;
+}
+
+.post_excerpt{
+    flex-basis: 70%;
+    align-self: flex-start;
+}

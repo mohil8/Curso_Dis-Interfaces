@@ -1,0 +1,28 @@
+.container{
+    background-color: grey;
+    padding: 10px;
+    display: grid;
+    gap: 20px;
+    grid-template-columns: auto;
+}
+
+.container1{
+    display: grid;
+    grid-template-columns: 1fr auto;
+}
+
+.div1{
+    background-color: rosybrown;
+    padding: 50px;
+}
+
+.texto{
+    background-color: orange;
+    align-self: baseline;
+}
+
+.div2{
+    background-color: lightblue;
+    order: 3;
+    
+}

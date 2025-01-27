@@ -6,25 +6,25 @@
     <title>Document</title>
     <script src="jquery-3.7.1.min.js"></script>
 
-    <style>
 
-
-
-    </style>
 </head>
 <body>
-
-<div class="container">hola</div>
+  
+    <input type="button" id="mi-boton-1" value="Botón 1">
+    <input type="button" id="mi-boton-2" value="Botón 2">
 
 
     <script>
+        $(document).ready(function(){
+            $("#mi-boton-1").on("click",function(){
+                $(this).css("background-color", "red");
+                console.log(this);
+            });
 
-        $(document).ready(function () {
-            
-        });
-
-        $(function (){
-
+            $("#mi-boton-2").on("click",function(){
+                $(this).css("background-color", "lightgreen");
+                console.log(this);
+            });
         });
     </script>
     

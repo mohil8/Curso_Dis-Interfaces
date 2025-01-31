@@ -117,6 +117,7 @@ form{
 
   /**
   * !!Ajustamos el botón al centro y aplicamos auto-fit al contenedor 
+  * !!para que los elementos se ajusten al tamaño del contenedor y que mínimo ocupen 250px
   */
   .filter-sidebar form button {
     grid-column: span 2;
@@ -130,10 +131,14 @@ form{
   }
 }
 
+/**
+  * !! En tamaño desktop aplicamos grid-template-areas y colocamos los elementos mas fácilmente,
+  * !! colocamos el formulario a la derecha y los modelos a la izquierda con el mismo formato de auto-fit
+  */
 @media screen and (min-width: 1000px) {
   .grid-models-container {
     display: grid;
-    grid-template-columns: 300px 1fr;
+    grid-template-columns: max-content 1fr;
     grid-template-rows: auto 1fr auto;
     grid-template-areas:
       "header header"

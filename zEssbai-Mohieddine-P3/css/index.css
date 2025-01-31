@@ -52,8 +52,8 @@ section.ofertas {
 }
 
 /**
-  * !! Le aplico display grid al nav del header y separo los dos elementos 
-  con un justify-items
+  * !! aplico grid al contenedor de las oferts para añadir espacio entre ellas 
+  y ajusto el contenido de las ofertas
   */
 
   .ofertas-grid {
@@ -67,7 +67,11 @@ section.ofertas {
     gap: 10px;
   }
   
-  
+  /**
+  * !! En tamaño tablet colocamos 2 ofertas en la primera fila con mismo tamaño 
+  y 1 en la segunda usando grid-area pero estableciendo posiciones con numeros
+  */
+
   @media (min-width: 600px) and (max-width: 999px) {
     .ofertas-grid {
       grid-template-columns: repeat(4, 1fr);
@@ -87,6 +91,10 @@ section.ofertas {
 
   }
   
+  /**
+  * !! En tamaño desktop usamos grid-template-para establecer el formato que queramos más fácilmente
+  */
+
   @media screen and (min-width: 1000px) {
     .model-card img {
       width: 100%;

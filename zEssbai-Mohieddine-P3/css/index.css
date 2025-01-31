@@ -1,0 +1,128 @@
+main {
+  padding: 2rem;
+}
+
+.grid-index-container {
+}
+
+/* Panel de bienvenida */
+.welcome {
+  background-color: var(--color-light);
+  padding: 2rem;
+  border-radius: 10px;
+  margin-bottom: 2rem;
+  color: var(--color-dark);
+}
+
+.welcome h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+/* Panel Ofertas Especiales */
+.ofertas-grid {
+}
+
+.ofertas h2 {
+  margin-bottom: 1rem;
+  color: var(--color-black);
+}
+
+/* Sidebar */
+.sidebar {
+  background-color: var(--color-light);
+  padding: 2rem;
+  color: var(--color-dark);
+}
+
+.sidebar h2 {
+  margin-bottom: 1rem;
+}
+
+.sidebar ul {
+  list-style-type: none;
+}
+
+.sidebar ul li {
+  margin-bottom: 0.5rem;
+}
+
+section.ofertas {
+  margin-top: 2rem;
+}
+
+/**
+  * !! Le aplico display grid al nav del header y separo los dos elementos 
+  con un justify-items
+  */
+
+  .ofertas-grid {
+    display: grid;
+    gap: 20px;
+  }
+  
+  .oferta-card {
+    display: grid;
+    grid-template-rows: auto auto 1fr auto;
+    gap: 10px;
+  }
+  
+  
+  @media (min-width: 600px) and (max-width: 999px) {
+    .ofertas-grid {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  
+    .oferta-card:nth-child(1) {
+      grid-area: 1/1/2/3;
+    }
+  
+    .oferta-card:nth-child(2) {
+      grid-area: 1/3/2/-1;
+    }
+  
+    .oferta-card:nth-child(3) {
+      grid-area: 2/-4/3/-2;
+    }
+
+  }
+  
+  @media screen and (min-width: 1000px) {
+    .model-card img {
+      width: 100%;
+    }
+  
+    .grid-index-container {
+      display: grid;
+      grid-template-columns: 1fr 250px;
+      grid-template-rows: auto 1fr auto;
+      grid-template-areas:
+        "header header"
+        "main sidebar"
+        "footer footer";
+    }
+  
+    header {
+      grid-area: header;
+    }
+  
+    main {
+      grid-area: main;
+    }
+  
+    aside.sidebar {
+      grid-area: sidebar;
+    }
+  
+    footer {
+      grid-area: footer;
+    }
+  
+    .ofertas-grid {
+      grid-template-columns: repeat(3, 1fr);
+    }
+
+  }
+
+
+

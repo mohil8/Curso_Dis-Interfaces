@@ -5,25 +5,49 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        .container {
-        display: grid;
-        width: 600px;
-        padding: 10px;
-        background-color: lightgrey;
-        grid-template-rows: 100px;
-        grid-template-columns: 1fr 1fr 1fr;
+        .container{
+            border: 5px solid black;
+            /*Grid*/
+            display: grid;
+            gap: 5px;
+            grid-template-columns: 1fr 1fr 1fr;
         }
-        .item {
-        background-color: lightcoral;
-        border: 1px solid black;
+
+        .container>div{
+            background-color: rgb(45, 67, 211);
+            border-bottom: 1px solid rgb(104, 104, 211);
+            padding: 10px;
+            /*Grid*/
         }
-        </style>
+
+        .container :nth-child(1){
+            background-color: red;
+            grid-column-start: 1;
+            grid-column-end: -1;
+        }
+
+        .container :nth-child(12){
+            background-color: green;
+            grid-column-start: 1;
+            grid-column-end: -1;
+        }
+           
+    </style>
 </head>
 <body>
     <div class="container">
-        <div class="item">A</div>
-        <div class="item">AAAAA</div>
-        <div class="item">AAAAAAAAAAAAAA</div>
-        </div>
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+        <div>9</div>
+        <div>10</div>
+        <div>11</div>
+        <div>12</div>
+    </div>
 </body>
 </html>

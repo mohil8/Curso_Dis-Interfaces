@@ -65,8 +65,8 @@
     </script>
     <script>
         $(document).ready(function(){
-            $('#ver').click(function(){
-                $('#numScroll').text('Numero de scroll:' + $('#texto2').scrollTop());
+            $('#texto2').scroll(function(){
+                $('#numScroll').text('Numero de scroll: ' + $(this).scrollTop());
             })
         })
     </script>

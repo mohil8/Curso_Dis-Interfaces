@@ -1,5 +1,3 @@
-.grid-models-container {
-}
 
 .filter-sidebar {
   background-color: var(--color-off-white);
@@ -9,9 +7,6 @@
 
 .filter-sidebar h2 {
   margin-bottom: 1rem;
-}
-
-.filter-sidebar form {
 }
 
 .filter-sidebar form label {

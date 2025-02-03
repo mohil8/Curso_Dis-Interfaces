@@ -2,8 +2,6 @@ main {
   padding: 2rem;
 }
 
-.grid-index-container {
-}
 
 /* Panel de bienvenida */
 .welcome {
@@ -17,10 +15,6 @@ main {
 .welcome h1 {
   font-size: 2.5rem;
   margin-bottom: 1rem;
-}
-
-/* Panel Ofertas Especiales */
-.ofertas-grid {
 }
 
 .ofertas h2 {
@@ -53,7 +47,7 @@ section.ofertas {
 
 /**
   * !! aplico grid al contenedor de las oferts para añadir espacio entre ellas 
-  y ajusto el contenido de las ofertas
+  * !!y ajusto el contenido de las ofertas
   */
 
   .ofertas-grid {
@@ -69,7 +63,7 @@ section.ofertas {
   
   /**
   * !! En tamaño tablet colocamos 2 ofertas en la primera fila con mismo tamaño 
-  y 1 en la segunda usando grid-area pero estableciendo posiciones con numeros
+  * !!y 1 en la segunda usando grid-area pero estableciendo posiciones con numeros
   */
 
   @media (min-width: 600px) and (max-width: 999px) {

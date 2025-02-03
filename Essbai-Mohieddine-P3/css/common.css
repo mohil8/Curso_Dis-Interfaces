@@ -32,11 +32,6 @@ header {
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-nav {
-}
-
-.logo-container {
-}
 
 .logo {
   height: 50px;
@@ -77,8 +72,6 @@ footer {
   padding: 2rem;
 }
 
-.footer-grid {
-}
 
 .footer-section h3 {
   margin-bottom: 1rem;

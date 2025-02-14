@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <label for="cb1">cb1</label> 
+    <input type="checkbox" name="cb1" id="cb1"> 
+ 
+    <label for="cb2">cb2</label> 
+    <input type="checkbox" name="cb2" id="cb2"> 
+ 
+<script> 
+  $(document).ready(function () { 
+    /*Con el attr los checkbox y radiobuton no fucninonan*/
+    $("#cb1").on("change", function () { 
+      console.log("$('#cb1').attr('checked'): " + $('#cb1').attr('checked')); 
+    }); 
+ /*Con prop si lo hacen*/
+    $("#cb2").on("change", function () { 
+      console.log("$('#cb2').prop('checked'): " + $('#cb2').prop('checked')); 
+    }); 
+  }); 
+</script>
+</body>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="jquery-3.7.1.min.js"></script>
+    <style>
+        .highlight { background-color: yellow; }
+        .hidden { display: none; }
+      </style>
+      
+</head>
+<body>
+    <h1 id="main-title">Título principal</h1>
+    <p id="description" class="hidden">Este es un párrafo con una clase oculta.</p>
+    <button id="toggle-class">Cambiar clase</button>
+    <input id="input-field" type="text" value="Texto inicial">
+    <a id="link" href="https://example.com">Ir a Example</a>
+    <button id="submit-button" disabled>Enviar</button>
+    <script>
+        $(document).ready(function(){
+            $("#main-title").addClass("highlight");
+        })
+    </script>
+    <script>
+        $(document).ready(function(){
+            $("#link").attr("href","https://www.google.com");
+        })
+       
+    </script>
+    <script>
+        $(document).ready(function(){
+           if($("#description").hasClass("hidden")){
+               console.log("El párrafo tiene la clase hidden");
+           }
+        })
+    </script>
+     <script>
+        $(document).ready(function(){
+           $("#main-title").html("<h2>Este es un nuevo título</h2>");
+        })
+    </script>
+    <script>
+        $(document).ready(function(){
+          $("#submit-button").prop("disabled",true);
+        })
+    </script>
+     <script>
+        $(document).ready(function(){
+          $("#link").removeAttr("href");
+        })
+    </script>
+    <script>
+        $(document).ready(function(){
+           $("#description").removeClass("hidden")
+        })
+    </script>
+    <script>
+        $(document).ready(function(){ç
+        $("#submit-button").prop("disabled",false);
+          $("#submit-button").removeProp("disabled");
+        })
+    </script>
+    <script>
+        $(document).ready(function(){
+          $("#toggle-class").click(function(){
+            $("#main-title").toggleClass("highlight");
+          })
+        })
+    </script>
+    <script>
+        $(document).ready(function(){
+          $("#toggle-class").click(function(){
+            $("#input-field").val("Texto modificado");
+          })
+        })
+    </script>
+
+</body>
+</html>

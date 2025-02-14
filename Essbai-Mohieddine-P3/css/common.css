@@ -32,11 +32,6 @@ header {
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-nav {
-}
-
-.logo-container {
-}
 
 .logo {
   height: 50px;
@@ -77,8 +72,6 @@ footer {
   padding: 2rem;
 }
 
-.footer-grid {
-}
 
 .footer-section h3 {
   margin-bottom: 1rem;
@@ -156,7 +149,13 @@ img {
 .oferta-button:hover {
   background-color: var(--color-dark);
 }
- /*********************************/
+/**
+  * !! Coloco la cabecera en ambos ficheros ya que en los tendran el mismo funcionamiento
+  */
+
+/**
+  * !! Le aplicamos grid al navegador y separamos el logo y los enlaces, luego ajustamso ambos componentes también con grid
+  */
 header > nav{
   display: grid;
   grid-auto-flow: column;
@@ -176,15 +175,9 @@ header > nav >ul{
   align-items: center;
 }
 
-form{
-  display: grid;
-  gap: 10px;
-}
-
-.models-grid{
-  display: grid;
-  gap: 20px;
-}
+/**
+  * !! Aplicamos grid al footer y ajustamos los elementos con grid también para ambos ficheros
+  */
 
 @media (min-width:600px){
   .footer-grid {

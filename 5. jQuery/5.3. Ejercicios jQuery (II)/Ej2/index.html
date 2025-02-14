@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="jquery-3.7.1.min.js"></script>
+    <style>
+          #navbar { 
+          display: flex; 
+          background-color: black; 
+        } 
+       
+        .nav-item { 
+          padding: 10px; 
+          color: white; 
+          text-decoration: none; 
+        } 
+       
+        a.nav-item:hover, 
+        a.active { 
+          background-color: red; 
+        } 
+    </style>
+
+</head>
+<body>
+    <button id="ver">Ver Resultados</button>
+    <br>
+    <h4>Ejercicio 1 </h4>
+    <textarea id="texto" rows="5" cols="33"></textarea>
+    <p id="contador">Contador: </p>
+    
+    <hr>
+    <h4>Ejercicio 2</h4>
+    <div id="texto2" style="overflow: scroll; width: 200px; height: 100px;">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reprehenderit officiis enim ullam quasi. Quo blanditiis totam commodi aperiam numquam amet est vel velit sed. Tenetur at iure officiis aut suscipit. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsa ex distinctio sint itaque assumenda odio mollitia impedit molestias, debitis quae tenetur facere, dignissimos reiciendis tempore suscipit dicta atque cum deleniti!</div>
+    <p id="numScroll">Numero de scroll:</p>
+    <hr>
+    <h4>Ejercicio 3</h4>
+    <div style="text-align: center;">
+        <img class="img3" src="https://picsum.photos/220/200" alt="">
+        <img class="img3" src="https://picsum.photos/200/200" alt="">
+    </div>
+    <hr>
+    <h4>Ejercicio 4</h4>
+       
+      <nav id="navbar"> 
+        <a class="nav-item active" href="#">Inicio</a> 
+        <a class="nav-item" href="#">Nosotros</a> 
+        <a class="nav-item" href="#">Servicios</a> 
+        <a class="nav-item" href="#">Contacto</a> 
+      </nav> 
+    
+      <hr>
+
+      <button id="my-button">Botón</button> 
+      <input type="text" id="my-input" disabled> 
+
+    <script>
+        $(document).ready(function(){
+          $('#texto').on('input', function(){
+              $('#contador').text('Contador: ' + $('#texto').val().length);
+          })
+        })
+    </script>
+    <script>
+        $(document).ready(function(){
+            $('#texto2').scroll(function(){
+                $('#numScroll').text('Numero de scroll: ' + $(this).scrollTop());
+            })
+        })
+    </script>
+    <script>
+        $(document).ready(function(){
+            $('#ver').click(function(){
+                $('.img3').each(function(){
+                   if($(this).attr('alt')==''){
+                        $(this).addClass('sinalt');
+                   }
+                })
+            })
+        })
+    </script>
+    <script>
+        $(document).ready(function(){
+            $('.nav-item').click(function(){
+                $('.nav-item.active').removeClass('active');
+                $(this).addClass('active');
+            })
+        })
+    </script>
+    <script>
+        $(document).ready(function(){
+            $('#my-button').click(function(){
+                $('#my-input').prop('disabled', false);
+            })
+        })
+    </script>
+</body>
+</html>

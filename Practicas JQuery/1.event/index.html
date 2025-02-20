@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="../jquery-3.7.1.min.js"></script>
+</head>
+<body>
+    <input id="mi-boton" type="button" value="Enviar"> 
+ 
+<script> 
+//El event nos da información sobre el evento que se ha producido. Por ejemplo ahora nos muestra el tipo de evento
+//que estamos usando("click") y el .page muestra la posición del ratón en la pantalla en el momento de pulsar.
+//Se pueden ver mas datos.
+  $(document).ready(function () { 
+    $('#mi-boton').on('click', function (event) { 
+      console.log('Tipo de evento:', event.type); 
+      console.log('Posición del mouse X:', event.pageX); 
+      console.log('Posición del mouse Y:', event.pageY); 
+    }); 
+  }); 
+</script>
+</body>
+</html>

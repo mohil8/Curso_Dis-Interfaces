@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manipulación css</title>
+    <script src="../jquery-3.7.1.min.js"></script>
+</head>
+<body>
+    <div id="1" style="color: red;">Texto1</div>
+
+    <script>
+        $(document).ready(function(){
+            //Con el .css() se puede establecer el valor de una propiedad css o recuperar el valor de una propiedad css
+            $("#1").css("color");
+            $("#1").css("font-size", "26px");
+
+            
+        });
+    </script>
+</body>
+</html>

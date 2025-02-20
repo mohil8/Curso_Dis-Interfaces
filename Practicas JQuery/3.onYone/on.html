@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos con jQuery</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="script.js"></script>
+    <style>
+        body { font-family: Arial, sans-serif; }
+        .box { width: 200px; height: 100px; background: lightblue; text-align: center; line-height: 100px; margin: 10px; cursor: pointer; }
+        .hidden { display: none; }
+    </style>
+</head>
+<body>
+
+    <h2>Eventos con jQuery</h2>
+
+    <button id="btnClick">Clic aquí</button>
+    <button id="btnDobleClick">Doble clic aquí</button>
+    
+    <input type="text" id="inputText" placeholder="Escribe algo...">
+    <select id="selectBox">
+        <option value="">Selecciona una opción</option>
+        <option value="1">Opción 1</option>
+        <option value="2">Opción 2</option>
+    </select>
+
+    <div class="box" id="hoverBox">Pasa el mouse</div>
+    <div class="box hidden" id="fadeBox">Aparezco con fade</div>
+
+</body>
+</html>

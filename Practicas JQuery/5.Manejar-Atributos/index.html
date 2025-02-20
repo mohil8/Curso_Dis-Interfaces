@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manejo de atributos</title>
+    <script src="../jquery-3.7.1.min.js"></script>
+</head>
+<body>
+    <div id="1">Texto 1</div>
+    <div id="2">Texto 2</div>
+    <div id="3">Texto 3</div>
+    <div id="4">Texto 4</div>
+    <div id="5" class="borrar">Texto 5</div>
+    <div id="6" class="1 2">Texto 6</div>
+    <input type="checkbox" checked>
+    <div id="8">Texto 8</div>
+    <button>Añadir clase</button>
+   <input type="text" id="9" value="Texto 9">
+    
+    <script>
+        $(document).ready(function(){
+            //Con esto añado la calse "numero1" al div con id 1
+            $('#1').addClass('numero1');
+
+            //Con el attr podemos ver el valor del atributo elegido
+            //Y tambien podemos estableces un nuevo atributo
+            console.log($('#1').attr('class'));
+            $('#2').attr('class','numero2');
+
+            //Con el hasClass podemos ver si un elemento tiene una clase
+            //Devuelve true o false
+            console.log($('#2').hasClass('numero2'));
+
+            //Con el .html() podemos ver el contenido de un elemento,cambiarlo o establecerlo
+            console.log($('#3').html()); 
+            $('#4').html('<h1>Texto añadido con .html()</h1>');
+            $('#3').html('Texto cambiado con .html()');
+            
+            //Con el .removeAttr() podemos eliminar un atributo
+            $('#5').removeAttr('class');
+
+            //Con el .removeClass() podemos eliminar una clase o todas
+            $('#6').removeClass('2');
+            $('#6').removeClass();
+
+            //Con el .prop() eliminamos una propiedad para el conjunto de elementos coincidentes.
+            $('input').prop('checked',false);
+
+            //Con el .toggleClass() podemos añadir o eliminar una clase
+            $('button').on('click',function(){
+                $('#8').toggleClass('toggleClass');
+            })
+
+            //Con el .val() podemos ver el valor de un input o establecerlo
+            console.log($('#9').val());
+            $('#9').val('Texto cambiado con .val()');
+
+
+
+        });
+    </script>
+</body>
+</html>

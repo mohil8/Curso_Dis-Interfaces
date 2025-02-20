@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="../jquery-3.7.1.min.js"></script>
+</head>
+<body>
+    <input type="text" id="textoInput">
+    <input type="checkbox" id="checkbox">
+
+    <script>
+        //El evento input se suele usar para type text
+        //El siguiete ejemplo devuelve el valor del input cada vez que se escribe algo.
+        $(document).ready(function(){
+            $('#textoInput').on('input',function(event){
+                console.log('Input:',event.target.value);
+            })
+        })
+        //El evento change se suele usar para type checkbox redio...
+        //El siguiete ejemplo devuelve true o false si el checkbox esta marcado o no.
+        $(document).ready(function(){
+            $('#checkbox').on('change',function(event){
+                console.log('Checkbox:',event.target.checked);
+            })
+        })
+    </script>
+</body>
+</html>

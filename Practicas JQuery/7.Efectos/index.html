@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Efectos con jquery</title>
+    <script src="../jquery-3.7.1.min.js"></script>
+</head>
+<body>
+    <div id="caja3" style="width: 100px; height: 100px;background-color: aqua;"></div>
+
+    <script>
+        $(document).ready(function(){
+            $(document).ready(function() {
+            $("#mover").click(function() {
+                $("#caja").animate({ left: "+=100px" }, 500);
+            });
+        });
+        });
+    </script>
+</body>
+</html>

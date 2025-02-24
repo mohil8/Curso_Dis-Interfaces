@@ -8,6 +8,15 @@
 </head>
 <body>
     <div id="1" style="color: red;">Texto1</div>
+    <div id="caja" style="width: 100px;background-color: red;padding: 20px;"></div>
+    <div id="caja2" style="background-color: greenyellow; height: 100px;"></div>
+    <div id="scroll" style="width: 150px;height: 150px; overflow: auto; border: 2px solid;">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste nam quod illo rem eius saepe rerum cupiditate, nobis soluta exercitationem provident ipsa dolor. Eum itaque odio, dignissimos suscipit corporis natus!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores aut eos, dolorum delectus eligendi itaque! Maiores libero voluptatibus dicta non mollitia labore porro eum incidunt earum veritatis, consequuntur illum tenetur.</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illo accusamus error magnam incidunt ad tempora aliquam. Obcaecati explicabo officia ipsam eveniet quisquam, aliquam placeat cum porro impedit culpa quia perspiciatis!</p>
+    </div>
+    <p id="textoScroll">Scroll</p>
+    
 
     <script>
         $(document).ready(function(){
@@ -15,7 +24,35 @@
             $("#1").css("color");
             $("#1").css("font-size", "26px");
 
-            
+            //Con el .height() se puede establecer el alto de un elemento o recuperar el alto de un elemento
+            console.log($("#1").height());
+            $("#caja").height('100px');
+
+            //Con .innerHeight() se puede establecer el alto de un elemento incluyendo padding o recuperar el alto de un elemento incluyendo padding
+            //Cuando añado padding a la caja la altura es de 140px y no de 100px como con el height();
+            console.log($('#caja').innerHeight());
+            $('#caja').innerHeight('140px');
+
+            //Con .outerHeight() se puede establecer el alto de un elemento incluyendo padding y bordes o recuperar el alto de un elemento incluyendo padding y bordes
+            $('#caja').outerHeight('100px');
+            console.log('Caja con outer:'+$('#caja').outerHeight());
+
+            //Con el .width() se puede establecer el ancho de un elemento o recuperar el ancho de un elemento
+            $('#caja2').width('100px');
+            console.log('Caja2 con width:'+$('#caja2').width());
+
+            //Con el .outerWidth() se puede establecer el ancho de un elemento incluyendo padding y bordes o recuperar el ancho de un elemento incluyendo padding y bordes
+            $('#caja2').outerWidth('200px');
+            console.log('Caja2 con outerWidth:'+$('#caja2').outerWidth());
+
+            //Con el .scrollTop() se puede establecer la posición de la barra de desplazamiento vertical o recuperar la posición de la barra de desplazamiento vertical
+            //En este ejemplo se muestra la posición de la barra de desplazamiento vertical
+            $(document).ready(function() {
+            setInterval(function() {
+            $('#textoScroll').text('Scroll top: ' + $('#scroll').scrollTop());
+            }, 100);
+            });
+
         });
     </script>
 </body>

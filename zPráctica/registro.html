@@ -11,50 +11,36 @@
 
 <body>
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-        <div class="container">
-            <a class="navbar-brand" href="index.html">
-                <i class="bi bi-house-door align-middle"></i>
-                <span class="ms-2">Mi Sitio</span>
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+          <div class="container">
+            <a class="navbar-brand" href="#"><i class="bi bi-house-door-fill"></i> Brand</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+              aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="index.html">Inicio</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" href="registro.html">Registro</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Servicios</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Nosotros</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Contacto</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
-                            Recursos
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Documentación</a></li>
-                            <li><a class="dropdown-item" href="#">Tutoriales</a></li>
-                            <li>
-                                <hr class="dropdown-divider">
-                            </li>
-                            <li><a class="dropdown-item" href="#">Soporte</a></li>
-                        </ul>
-                    </li>
-                </ul>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+              <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link active" href="#">Inicio</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Registro</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Servicios</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Nosotros</a></li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                    aria-expanded="false">Recursos</a>
+                  <ul class="dropdown-menu bg-secondary" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item text-white bg-secondary" href="#">Documentación</a></li>
+                    <li><a class="dropdown-item text-white bg-secondary" href="#">Tutoriales</a></li>
+                    <li><hr class="dropdown-divider bg-dark"></li>
+                    <li><a class="dropdown-item text-white bg-secondary" href="#">Soporte</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item"><a class="nav-link" href="#">Contacto</a></li>
+              </ul>
             </div>
-        </div>
-    </nav>
-
+          </div>
+        </nav>
+      </header>
     <!-- Registration Form -->
     <main class="container py-5 mt-5">
         <div class="row justify-content-center">
@@ -96,7 +82,50 @@
                                 <label for="tipoUsuario">Tipo de Usuario</label>
                             </div>
 
-                            <!-- Comunidad Autónoma -->
+                            <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+                                <div class="container">
+                                    <a class="navbar-brand" href="index.html">
+                                        <i class="bi bi-house-door align-middle"></i>
+                                        <span class="ms-2">Mi Sitio</span>
+                                    </a>
+                                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                                        <span class="navbar-toggler-icon"></span>
+                                    </button>
+                                    <div class="collapse navbar-collapse" id="navbarNav">
+                                        <ul class="navbar-nav ms-auto">
+                                            <li class="nav-item">
+                                                <a class="nav-link" href="index.html">Inicio</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link active" href="registro.html">Registro</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link" href="#">Servicios</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link" href="#">Nosotros</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link" href="#">Contacto</a>
+                                            </li>
+                                            <li class="nav-item dropdown">
+                                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                                                    Recursos
+                                                </a>
+                                                <ul class="dropdown-menu">
+                                                    <li><a class="dropdown-item" href="#">Documentación</a></li>
+                                                    <li><a class="dropdown-item" href="#">Tutoriales</a></li>
+                                                    <li>
+                                                        <hr class="dropdown-divider">
+                                                    </li>
+                                                    <li><a class="dropdown-item" href="#">Soporte</a></li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </nav>
+                                          <!-- Comunidad Autónoma -->
                             <div class="form-floating mb-3">
                                 <input class="form-control" list="ccaaList" id="ccaa" placeholder="Buscar..."
                                     data-bs-toggle="tooltip" data-bs-placement="top"
